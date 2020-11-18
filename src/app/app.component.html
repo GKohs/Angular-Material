@@ -82,3 +82,58 @@
 </div>
 
 <hr />
+<div class="mat-title">Step 4: Button Toggle</div>
+
+<div>
+  <span>
+    For more informations:
+    <a
+      href="https://material.angular.io/components/button-toggle/overview"
+      target="_blank"
+    >
+      here
+    </a>
+  </span>
+</div>
+
+<div>
+  <mat-button-toggle #toggleBtn checked>Toggle</mat-button-toggle>
+  {{ toggleBtn.checked }}
+</div>
+
+<div>
+  <mat-button-toggle-group #toggleGroup="matButtonToggleGroup" multiple>
+    <mat-button-toggle value="angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="react">React</mat-button-toggle>
+    <mat-button-toggle value="vue">Vue</mat-button-toggle>
+  </mat-button-toggle-group>
+  {{ toggleGroup.value }}
+</div>
+
+<hr />
+<div class="mat-title">Step 5: Icon</div>
+
+<div>
+  <span>
+    For more informations:
+    <a
+      href="https://material.angular.io/components/icon/overview"
+      target="_blank"
+    >
+      here
+    </a>
+    and
+    <a
+      href="https://material.io/resources/icons/?style=baseline"
+      target="_blank"
+    >
+      here
+    </a>
+  </span>
+</div>
+
+<div>
+  <mat-icon color="primary">grade</mat-icon>
+  <mat-icon>outbound</mat-icon>
+  <mat-icon>next_plan</mat-icon>
+</div>
