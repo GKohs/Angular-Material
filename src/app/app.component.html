@@ -155,7 +155,9 @@
 
 <div class="notification">
   <div>
-    <span [matBadge]="notification" [matBadgeHidden]="notification === 0">Notification</span>
+    <span [matBadge]="notification" [matBadgeHidden]="notification === 0"
+      >Notification</span
+    >
   </div>
   <div>
     <span matBadge="5" matBadgePosition="below before">Notification</span>
@@ -188,7 +190,9 @@
     <span matBadge="5" matBadgeColor="warn">Notification</span>
   </div>
   <div>
-    <span matBadge="5" matBadgeColor="warn" matBadgeOverlap="false">Notification</span>
+    <span matBadge="5" matBadgeColor="warn" matBadgeOverlap="false"
+      >Notification</span
+    >
   </div>
 </div>
 
@@ -242,3 +246,37 @@
     <span>Section 3</span>
   </div>
 </mat-toolbar>
+
+<hr />
+<div class="mat-title">Step 8: SideNav</div>
+
+<div>
+  <span>
+    For more informations:
+    <a
+      href="https://material.angular.io/components/toolbar/overview"
+      target="_blank"
+    >
+      Toolbar
+    </a>
+  </span>
+</div>
+
+<mat-sidenav-container>
+  <!--- mode => over, push, side -->
+  <mat-sidenav
+    #sidenav
+    (opened)="log('Opened')"
+    (closed)="log('Closed')"
+    mode="side"
+    [(opened)]="opened"
+    >Sidenav</mat-sidenav
+  >
+  <mat-sidenav-content
+    >Main
+    <button (click)="opened = !opened">Toggle Open</button>
+    <button (click)="sidenav.open()">Open</button>
+    <button (click)="sidenav.close()">Close</button>
+    <button (click)="sidenav.toggle()">Toggle</button>
+  </mat-sidenav-content>
+</mat-sidenav-container>

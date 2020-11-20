@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-material';
   notification = 2;
+
   showSpinner = false;
 
   loadData() {
@@ -16,4 +17,11 @@ export class AppComponent {
       this.showSpinner = false;
     }, 3000)
   }
+
+  opened = false;
+
+  log(state) {
+    console.log(state);
+  }
+
 }
