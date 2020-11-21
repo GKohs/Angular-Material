@@ -1,5 +1,12 @@
-button, .notification>div {
+.notification > div {
   margin: 3rem;
+}
+
+button {
+}
+
+.abstand {
+  height: 100%;
 }
 
 .navbar {
@@ -14,7 +21,8 @@ mat-sidenav-container {
   height: 100%;
 }
 
-mat-sidenav, mat-sidenav-content {
+mat-sidenav,
+mat-sidenav-content {
   padding: 16px;
 }
 
